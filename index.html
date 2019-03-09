@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+	
+<head>
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
+	<meta charset="utf-8"/>
+	<title>Estoque Loja</title>
+</head>
+	
+<body>
+	<main>
+		<header>
+			<h1>Baratão</h1>
+		</header>
+		<section class="informacoes">
+			<h2>Controle do Estoque</h2>
+			<div class="grupo">
+				<label for="filtrar">Filtro</label>
+				<input id="filtrar" name="filtrar" type="text" class="campo">
+			</div>
+			<table id="tb-estoque">
+				<thead class="tb_cabecalho">
+					<tr>
+						<th>Nome Produto</th>
+						<th>Peso (gramas)</th>
+						<th>Quantidade</th>
+						<th>Valor Unidade</th>
+						<th>Valor total</th>
+					</tr>
+				</thead>
+				<tbody id="bodyTab">
+					<tr class="dadosProd">
+						<td class="nomeProd">Revista</td>
+						<td class="pesoProd">200</td>
+						<td class="quantProd">25</td>
+						<td class="precoProd">1.50</td>
+						<td class="valorTotal"></td>
+					</tr>
+					<tr class="dadosProd">
+						<td class="nomeProd">Caneta</td>
+						<td class="pesoProd">10</td>
+						<td class="quantProd">100</td>
+						<td class="precoProd">1.75</td>
+						<td class="valorTotal"></td>
+					</tr>
+					<tr class="dadosProd">
+						<td class="nomeProd">Violão</td>
+						<td class="pesoProd">3200</td>
+						<td class="quantProd">50</td>
+						<td class="precoProd">500</td>
+						<td class="valorTotal"></td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+		
+		<section class=".secForm">
+			<h2>Adicionar Itens a Tabela</h2>
+			<div class="grupo">
+				<ul id="ul_erro">
+					
+				</ul>
+			</div>	
+			<form id="form">
+				<div class="grupo">
+					<label for="nomeProduto">Nome produto</label>
+					<input id="nomeProduto" name="nomeProduto" type="text" class="campo">
+				</div>
+				<div class="grupo">
+					<label for="pesoProd">Peso produto</label>
+					<input id="pesoProd" name="pesoProd" type="text" class="campo">
+				</div>	
+				<div class="grupo">
+					<label for="quantProd">Quantidade produto</label>
+					<input id="quantProd" name="quantProd" type="text" class="campo">
+				</div>	
+				<div class="grupo">
+					<label for="precoProd">Preço produto</label>
+					<input id="precoProd" name="precoProd" type="text" class="campo">
+				</div>
+				<div class="grupo">
+					<button id="botao_principal" class="botao">Adicionar</button>
+				</div>	
+			</form>
+		</section>
+	</main>
+	
+	<script type="text/javascript" src="javascript/calculoValor.js"></script>
+	<script type="text/javascript" src="javascript/form.js"></script>
+	<script type="text/javascript" src="javascript/remover.js"></script>
+	<script type="text/javascript" src="javascript/filtro.js"></script>
+</body>
+	
+</html>

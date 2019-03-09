@@ -1,0 +1,96 @@
+@charset "utf-8";
+
+body{
+	background-color: #D3D3D3;
+}
+main{
+	width: 100%;
+}
+
+header{
+	width: 100%;
+	height:40px;
+	background-color: #000000;
+	padding-top: 7px;
+}
+
+h1{
+	font-family: Arial, sans-serif;
+	font-size: 2em;
+	text-align: left;
+	color:#DCDCDC;
+	margin-left: 10px;
+}
+
+.informacoes{
+	padding:10px;
+}
+h2{
+	font-family: Arial, sans-serif;
+	font-size: 1.8em;
+	text-align: center;
+	color:#006400;
+	margin:20px;
+}
+#tb-estoque{
+	margin: 0 auto;
+	width: 50%;
+	border-collapse
+}
+
+.tb_cabecalho tr, th{
+	border: 1px solid black; 
+	background-color:#8B4513;
+	color:#F8F8FF;
+	padding: 10px;
+	font-size: 15pt;
+}
+tbody.dadosProd, tr, td{
+	border: 1px solid black; 
+	color:black;
+	padding: 10px;
+	font-size: 15pt;
+}
+tr:hover{
+	background-color:#A9A9A9;
+}
+
+.grupo{
+	width:250px;
+	margin: 10px auto;
+}
+
+.botao{
+	font-size: 20pt;
+	width: 100%;
+	background-color: red;
+	border: 2px solid yellow;
+}
+
+.campo{
+	width: 100%;
+	height: 30px;
+}
+
+.botao:hover{
+	transition: 0.1s;
+	background-color: blue;
+}
+
+.erro{
+	background-color:red;
+}
+
+#ul_erro{
+	margin: 0 auto;
+	color:red;
+}
+
+.fadeOut{
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.some{
+	display:none;
+}
